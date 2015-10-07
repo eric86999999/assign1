@@ -1,8 +1,6 @@
 
 PImage fighter,enemy,treasure,hp,bg1,bg2;
-
 int x,hpr,trex,trey,bgx,bgy;
-
 
 void setup () {
   size(640,480) ;  
@@ -18,7 +16,6 @@ void setup () {
   bgx=0;
   bgy=-640;
   
-  
 }
 
 void draw() {
@@ -26,10 +23,10 @@ void draw() {
   image(bg1,bgx,0);           
   bgx+=4;
   bgy+=4;
-  if(bgx==640){
+  if(bgx==640){              //bg1 reset
     bgx=-640;
   }
-  if(bgy==640){
+  if(bgy==640){              //bg2 reset
     bgy=-640;
   }
   
